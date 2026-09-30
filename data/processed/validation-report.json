@@ -1,0 +1,17 @@
+{
+  "status": "passed",
+  "records": 10,
+  "tags": 78,
+  "proof_points": 15,
+  "evidence_fragments": 91,
+  "checks": [
+    "typed schema",
+    "taxonomy labels",
+    "evidence references",
+    "selected page boundaries",
+    "quote presence",
+    "source hashes",
+    "corpus coverage"
+  ],
+  "semantic_review": "assistant-curated draft; independent human review pending"
+}

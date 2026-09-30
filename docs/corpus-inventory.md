@@ -1,6 +1,6 @@
 # Initial corpus inventory
 
-All ten PDFs downloaded and parsed. Tags and metrics are not classified yet.
+All ten PDFs downloaded and parsed. All ten have assistant-curated draft metadata.
 
 | Case | Publisher | Selected PDF pages | Role |
 |---|---|---|---|
@@ -21,8 +21,8 @@ Five landscape slide-style briefs (three GlobalLogic, two Clarkston); three port
 
 ## Validation
 
-All selected case pages contain extractable text. Source IDs and page ranges checked; quote-presence verification passed; fabricated quotes and unsupported tags rejected. First selected page of every case visually inspected. Full diagram/OCR review and metadata classification remain pending.
+All selected case pages contain extractable text. Source IDs and page ranges checked; quote-presence verification passed; fabricated quotes and unsupported tags rejected. First selected page of every case visually inspected. All ten records passed typed schema, taxonomy, selected-page, evidence-reference, quote-presence, and source-hash checks. Full diagram/OCR and independent human review remain pending.
 
 ## Next step
 
-Review draft metadata dimensions against these case excerpts, classify facts with evidence, then implement the bounded model tool loop. No vector index or model API calls have been added.
+Implement the bounded model tool loop using the structured catalogue and records. No vector index or model API calls have been added.

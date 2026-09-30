@@ -1,0 +1,134 @@
+{
+  "schema_version": "1.0",
+  "case_id": "abn_amro",
+  "title": "ABN AMRO: future-focused Gen AI development",
+  "source_id": "abn_amro",
+  "pages": [
+    1,
+    2
+  ],
+  "organization": {
+    "text": "ABN AMRO",
+    "evidence_ids": [
+      "a"
+    ]
+  },
+  "engagement_year": null,
+  "observed_tags": [
+    {
+      "dimension": "industry",
+      "value": "banking",
+      "evidence_ids": [
+        "b"
+      ]
+    },
+    {
+      "dimension": "function",
+      "value": "customer_service",
+      "evidence_ids": [
+        "c",
+        "e"
+      ]
+    },
+    {
+      "dimension": "capability",
+      "value": "strategy",
+      "evidence_ids": [
+        "d"
+      ]
+    },
+    {
+      "dimension": "technology",
+      "value": "generative_ai",
+      "evidence_ids": [
+        "e"
+      ]
+    },
+    {
+      "dimension": "ai_use_case",
+      "value": "customer_chatbot",
+      "evidence_ids": [
+        "e"
+      ]
+    },
+    {
+      "dimension": "solution_type",
+      "value": "conversational_assistant",
+      "evidence_ids": [
+        "e"
+      ]
+    }
+  ],
+  "inferred_retrieval_concepts": [
+    "personalized banking assistant",
+    "enterprise AI adoption",
+    "customer service transformation"
+  ],
+  "summaries": {
+    "challenge": {
+      "text": "The bank sought more personal digital customer interactions.",
+      "evidence_ids": [
+        "a",
+        "c"
+      ]
+    },
+    "solution": {
+      "text": "A roadmap and GenAI chatbot supported the customer-service approach.",
+      "evidence_ids": [
+        "d",
+        "e"
+      ]
+    },
+    "outcome": {
+      "text": "The source reports introduction of the Rikkie chatbot; no measured outcome metric is extracted.",
+      "evidence_ids": [
+        "e"
+      ]
+    }
+  },
+  "evidence": {
+    "a": {
+      "source_id": "abn_amro",
+      "page": 1,
+      "quote": "Client: ABN AMRO"
+    },
+    "b": {
+      "source_id": "abn_amro",
+      "page": 1,
+      "quote": "Industry: Banking and capital markets"
+    },
+    "c": {
+      "source_id": "abn_amro",
+      "page": 1,
+      "quote": "personal one-on-one"
+    },
+    "d": {
+      "source_id": "abn_amro",
+      "page": 2,
+      "quote": "strategy and roadmap"
+    },
+    "e": {
+      "source_id": "abn_amro",
+      "page": 2,
+      "quote": "introduced “Rikkie”, a Gen AI-infused chatbot"
+    },
+    "f": {
+      "source_id": "abn_amro",
+      "page": 2,
+      "quote": "safety, security, and privacy."
+    }
+  },
+  "proof_points": [],
+  "limitations": [
+    "Named chatbot does not establish a persona-simulation use case.",
+    "No quantified business outcome retained."
+  ],
+  "classification_metadata": {
+    "method": "assistant_curated",
+    "classifier": "ChatGPT assistant curation and source-text review; no external classification API",
+    "classified_on": "2026-09-30",
+    "taxonomy_version": "1.0",
+    "source_sha256": "412cdf41757517f92606844496e0d5d1edb266fc7a13a1d56d9e6c5c6cb1b020"
+  },
+  "review_status": "draft"
+}

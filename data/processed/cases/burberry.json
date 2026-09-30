@@ -1,0 +1,135 @@
+{
+  "schema_version": "1.0",
+  "case_id": "burberry",
+  "title": "Burberry: omnichannel luxury retail",
+  "source_id": "burberry",
+  "pages": [
+    48
+  ],
+  "organization": {
+    "text": "Burberry",
+    "evidence_ids": [
+      "a"
+    ]
+  },
+  "engagement_year": null,
+  "observed_tags": [
+    {
+      "dimension": "industry",
+      "value": "luxury_retail",
+      "evidence_ids": [
+        "a"
+      ]
+    },
+    {
+      "dimension": "function",
+      "value": "commerce",
+      "evidence_ids": [
+        "c",
+        "d"
+      ]
+    },
+    {
+      "dimension": "solution_type",
+      "value": "omnichannel_experience",
+      "evidence_ids": [
+        "c",
+        "d",
+        "e"
+      ]
+    },
+    {
+      "dimension": "brand_context",
+      "value": "luxury",
+      "evidence_ids": [
+        "a"
+      ]
+    },
+    {
+      "dimension": "capability",
+      "value": "customer_experience",
+      "evidence_ids": [
+        "f"
+      ]
+    }
+  ],
+  "inferred_retrieval_concepts": [
+    "high-touch luxury experience",
+    "brand-sensitive retail",
+    "personalized luxury shopping"
+  ],
+  "summaries": {
+    "challenge": {
+      "text": "Burberry adapted to changing consumer habits around the pandemic.",
+      "evidence_ids": [
+        "b"
+      ]
+    },
+    "solution": {
+      "text": "Its omnichannel approach connects digital sales and personal shopping appointments.",
+      "evidence_ids": [
+        "c",
+        "d",
+        "e",
+        "f"
+      ]
+    },
+    "outcome": {
+      "text": "The report describes full-price online sales performance across its regions.",
+      "evidence_ids": [
+        "g"
+      ]
+    }
+  },
+  "evidence": {
+    "a": {
+      "source_id": "burberry",
+      "page": 48,
+      "quote": "Burberry is one the few leading luxury global brands"
+    },
+    "b": {
+      "source_id": "burberry",
+      "page": 48,
+      "quote": "changing consumer habits during and post-Covid"
+    },
+    "c": {
+      "source_id": "burberry",
+      "page": 48,
+      "quote": "brand has used digital to support both its online and"
+    },
+    "d": {
+      "source_id": "burberry",
+      "page": 48,
+      "quote": "offline sales."
+    },
+    "e": {
+      "source_id": "burberry",
+      "page": 48,
+      "quote": "in-person and virtual appointments"
+    },
+    "f": {
+      "source_id": "burberry",
+      "page": 48,
+      "quote": "personalised shopping experience"
+    },
+    "g": {
+      "source_id": "burberry",
+      "page": 48,
+      "quote": "in full-price online sales across all of its regions,"
+    }
+  },
+  "proof_points": [],
+  "limitations": [
+    "Case in a sector report, not a named consulting delivery engagement.",
+    "Growth passage has interleaved columns; no numeric metric promoted to structured proof points.",
+    "No explicit brand-governance or ultra-luxury classification."
+  ],
+  "classification_metadata": {
+    "method": "assistant_curated",
+    "classifier": "ChatGPT assistant curation and source-text review; no external classification API",
+    "classified_on": "2026-09-30",
+    "taxonomy_version": "1.0",
+    "source_sha256": "28a8676a2ffed2977b0330c0776ab22024cd998bd6b0192db52ef54d95711c08"
+  },
+  "review_status": "draft"
+}

@@ -1,0 +1,231 @@
+{
+  "schema_version": "1.0",
+  "case_id": "sdlc_agent",
+  "title": "Accelerated Software Delivery with Agentic AI",
+  "source_id": "sdlc_agent",
+  "pages": [
+    1,
+    2
+  ],
+  "organization": null,
+  "engagement_year": null,
+  "observed_tags": [
+    {
+      "dimension": "industry",
+      "value": "mobility_services",
+      "evidence_ids": [
+        "a"
+      ]
+    },
+    {
+      "dimension": "engagement_type",
+      "value": "proof_of_concept",
+      "evidence_ids": [
+        "b"
+      ]
+    },
+    {
+      "dimension": "capability",
+      "value": "software_engineering",
+      "evidence_ids": [
+        "c",
+        "d",
+        "e"
+      ]
+    },
+    {
+      "dimension": "ai_use_case",
+      "value": "backlog_generation",
+      "evidence_ids": [
+        "c",
+        "d"
+      ]
+    },
+    {
+      "dimension": "ai_use_case",
+      "value": "test_generation",
+      "evidence_ids": [
+        "c",
+        "e"
+      ]
+    },
+    {
+      "dimension": "lifecycle_stage",
+      "value": "requirements",
+      "evidence_ids": [
+        "f"
+      ]
+    },
+    {
+      "dimension": "lifecycle_stage",
+      "value": "testing",
+      "evidence_ids": [
+        "e"
+      ]
+    },
+    {
+      "dimension": "outcome_type",
+      "value": "cycle_time_reduction",
+      "evidence_ids": [
+        "f",
+        "g",
+        "h"
+      ]
+    },
+    {
+      "dimension": "technology",
+      "value": "artificial_intelligence",
+      "evidence_ids": [
+        "ai"
+      ]
+    },
+    {
+      "dimension": "outcome_type",
+      "value": "test_coverage_improvement",
+      "evidence_ids": [
+        "i",
+        "j"
+      ]
+    }
+  ],
+  "inferred_retrieval_concepts": [
+    "AI-enabled SDLC",
+    "release acceleration",
+    "acceptance criteria automation"
+  ],
+  "summaries": {
+    "challenge": {
+      "text": "A mobility-services provider sought AI-enabled software delivery improvements.",
+      "evidence_ids": [
+        "a"
+      ]
+    },
+    "solution": {
+      "text": "A controlled PoC used backlog and testing agents for user stories and test scripts.",
+      "evidence_ids": [
+        "b",
+        "c",
+        "d",
+        "e"
+      ]
+    },
+    "outcome": {
+      "text": "The publisher reports shorter requirements and test-generation cycles and increased test coverage.",
+      "evidence_ids": [
+        "f",
+        "g",
+        "h",
+        "i",
+        "j"
+      ]
+    }
+  },
+  "evidence": {
+    "a": {
+      "source_id": "sdlc_agent",
+      "page": 1,
+      "quote": "consumer mobility and assistance services provider"
+    },
+    "b": {
+      "source_id": "sdlc_agent",
+      "page": 1,
+      "quote": "controlled proof of concept"
+    },
+    "c": {
+      "source_id": "sdlc_agent",
+      "page": 2,
+      "quote": "Backlog and testing agents"
+    },
+    "d": {
+      "source_id": "sdlc_agent",
+      "page": 2,
+      "quote": "User Story Creation"
+    },
+    "e": {
+      "source_id": "sdlc_agent",
+      "page": 2,
+      "quote": "Automated Test Scripting"
+    },
+    "f": {
+      "source_id": "sdlc_agent",
+      "page": 2,
+      "quote": "Requirements cycle cut from three"
+    },
+    "g": {
+      "source_id": "sdlc_agent",
+      "page": 2,
+      "quote": "weeks to one"
+    },
+    "h": {
+      "source_id": "sdlc_agent",
+      "page": 2,
+      "quote": "eight hours to twenty minutes"
+    },
+    "i": {
+      "source_id": "sdlc_agent",
+      "page": 2,
+      "quote": "Automated test coverage improved"
+    },
+    "j": {
+      "source_id": "sdlc_agent",
+      "page": 2,
+      "quote": "from 80% to 90%"
+    },
+    "ai": {
+      "source_id": "sdlc_agent",
+      "page": 1,
+      "quote": "Agentic AI in the SDLC"
+    }
+  },
+  "proof_points": [
+    {
+      "text": "Requirements cycle shortened.",
+      "evidence_ids": [
+        "f",
+        "g"
+      ],
+      "metric": "3 weeks → 1 week",
+      "scope": "Controlled PoC for one portal feature",
+      "baseline": "3 weeks",
+      "measurement_period": null,
+      "qualification": "Not evidence of a measured end-to-end release-time improvement.",
+      "status": "publisher_reported"
+    },
+    {
+      "text": "Test scenario generation time shortened.",
+      "evidence_ids": [
+        "h"
+      ],
+      "metric": "8 hours → 20 minutes",
+      "scope": "Controlled PoC test generation",
+      "baseline": "8 hours",
+      "measurement_period": null,
+      "qualification": null,
+      "status": "publisher_reported"
+    },
+    {
+      "text": "Automated test coverage increased.",
+      "evidence_ids": [
+        "i",
+        "j"
+      ],
+      "metric": "80% → 90%",
+      "scope": "Controlled PoC automated testing",
+      "baseline": "80%",
+      "measurement_period": null,
+      "qualification": null,
+      "status": "publisher_reported"
+    }
+  ],
+  "limitations": [
+    "Controlled PoC; do not generalize to enterprise-wide deployment."
+  ],
+  "classification_metadata": {
+    "method": "assistant_curated",
+    "classifier": "ChatGPT assistant curation and source-text review; no external classification API",
+    "classified_on": "2026-09-30",
+    "taxonomy_version": "1.0",
+    "source_sha256": "670cf4b3f2dde627f0d8418cfd199ae4a72cb39f3a1c0bbdb4370aa4f61e4b99"
+  },
+  "review_status": "draft"
+}

@@ -3,7 +3,7 @@ import json
 from .pipeline import ROOT
 
 def list_cases():
-    return json.loads((ROOT/'data/case-catalogue.json').read_text())
+    return json.loads((ROOT/'data/processed/catalogue.json').read_text())
 
 def read_pages(source_id: str, pages: list[int], max_characters: int = 16000):
     sources={s['id'] for s in json.loads((ROOT/'data/sources.json').read_text())}
@@ -26,3 +26,11 @@ def verify_evidence(source_id: str, page: int, quote: str):
     if not quote.strip(): return False
     normalize=lambda x: re.sub(r'\s+',' ',x).strip()
     return normalize(quote) in normalize(read_pages(source_id,[page],32000)[0]['text'])
+
+
+def read_case(case_id: str):
+    known={c['case_id'] for c in list_cases()}
+    if case_id not in known:
+        raise ValueError('Unknown case ID')
+    from .models import CaseRecord
+    return CaseRecord.model_validate_json((ROOT/'data/processed/cases'/f'{case_id}.json').read_text()).model_dump()

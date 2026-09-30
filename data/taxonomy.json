@@ -1,0 +1,118 @@
+{
+  "version": "1.0",
+  "unknown_policy": "Omit unsupported tags; leave unknown identity/year null. New labels require taxonomy revision.",
+  "dimensions": {
+    "industry": {
+      "definition": "Client business sector; not the technology vendor sector.",
+      "labels": [
+        "aerospace_defense",
+        "banking",
+        "biopharmaceuticals",
+        "consumer_appliances",
+        "energy",
+        "luxury_retail",
+        "mobility_services"
+      ]
+    },
+    "function": {
+      "definition": "Business function served by the solution.",
+      "labels": [
+        "commerce",
+        "customer_service",
+        "marketing",
+        "medical_information",
+        "workplace_operations"
+      ]
+    },
+    "capability": {
+      "definition": "Type of work delivered.",
+      "labels": [
+        "application_modernization",
+        "change_management",
+        "customer_experience",
+        "software_engineering",
+        "strategy"
+      ]
+    },
+    "technology": {
+      "definition": "Technology explicitly established by the selected pages.",
+      "labels": [
+        "3d_models",
+        "artificial_intelligence",
+        "augmented_reality",
+        "azure",
+        "generative_ai",
+        "microsoft_365_copilot",
+        "microsoft_copilot"
+      ]
+    },
+    "ai_use_case": {
+      "definition": "Specific AI task; do not infer AI from ordinary automation.",
+      "labels": [
+        "backlog_generation",
+        "code_conversion",
+        "code_review",
+        "conversation_summarization",
+        "customer_chatbot",
+        "documentation_generation",
+        "marketing_content_generation",
+        "medical_document_generation",
+        "test_generation"
+      ]
+    },
+    "lifecycle_stage": {
+      "definition": "Software lifecycle phase explicitly addressed.",
+      "labels": [
+        "deployment",
+        "modernization",
+        "requirements",
+        "testing"
+      ]
+    },
+    "solution_type": {
+      "definition": "Deployed or prototyped solution pattern.",
+      "labels": [
+        "content_agent",
+        "conversational_assistant",
+        "immersive_commerce",
+        "omnichannel_experience",
+        "service_assistant",
+        "workplace_assistant"
+      ]
+    },
+    "outcome_type": {
+      "definition": "Type of publisher-reported benefit, not independent verification.",
+      "labels": [
+        "adoption",
+        "conversion_improvement",
+        "cost_reduction",
+        "cycle_time_reduction",
+        "delivery_acceleration",
+        "productivity_improvement",
+        "test_coverage_improvement"
+      ]
+    },
+    "brand_context": {
+      "definition": "Explicit premium/luxury context or brand constraints. Do not treat these as interchangeable.",
+      "labels": [
+        "brand_guidelines",
+        "luxury",
+        "premium"
+      ]
+    },
+    "engagement_type": {
+      "definition": "Engagement maturity when explicit; unknown if absent.",
+      "labels": [
+        "proof_of_concept"
+      ]
+    }
+  },
+  "label_notes": {
+    "premium": "High-end product positioning; not automatically luxury or ultra-luxury.",
+    "luxury": "Explicit luxury client/retail positioning.",
+    "brand_guidelines": "Explicit on-brand assets or brand requirements; not evidence of luxury.",
+    "artificial_intelligence": "AI is explicit but no specific generative model/type established.",
+    "marketing_content_generation": "Marketing asset creation; separate from medical information or service summaries.",
+    "workplace_assistant": "General workplace productivity; not automatically software engineering."
+  }
+}

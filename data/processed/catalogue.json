@@ -1,0 +1,448 @@
+[
+  {
+    "case_id": "abn_amro",
+    "title": "ABN AMRO: future-focused Gen AI development",
+    "source_id": "abn_amro",
+    "source_url": "https://www.capgemini.com/wp-content/uploads/2025/05/ABN-AMRO-client-story-case-study.pdf",
+    "pages": [
+      1,
+      2
+    ],
+    "observed_tags": {
+      "industry": [
+        "banking"
+      ],
+      "function": [
+        "customer_service"
+      ],
+      "capability": [
+        "strategy"
+      ],
+      "technology": [
+        "generative_ai"
+      ],
+      "ai_use_case": [
+        "customer_chatbot"
+      ],
+      "solution_type": [
+        "conversational_assistant"
+      ]
+    },
+    "inferred_retrieval_concepts": [
+      "personalized banking assistant",
+      "enterprise AI adoption",
+      "customer service transformation"
+    ],
+    "summary": "The bank sought more personal digital customer interactions. A roadmap and GenAI chatbot supported the customer-service approach. The source reports introduction of the Rikkie chatbot; no measured outcome metric is extracted.",
+    "metric_count": 0,
+    "limitations": [
+      "Named chatbot does not establish a persona-simulation use case.",
+      "No quantified business outcome retained."
+    ],
+    "review_status": "draft",
+    "record_path": "data/processed/cases/abn_amro.json"
+  },
+  {
+    "case_id": "burberry",
+    "title": "Burberry: omnichannel luxury retail",
+    "source_id": "burberry",
+    "source_url": "https://form.internetretailing.net/cvgdehjvc12/GLOBAL-LUXURY-SECTOR-REPORT-2023_v5_PS1.pdf",
+    "pages": [
+      48
+    ],
+    "observed_tags": {
+      "industry": [
+        "luxury_retail"
+      ],
+      "function": [
+        "commerce"
+      ],
+      "solution_type": [
+        "omnichannel_experience"
+      ],
+      "brand_context": [
+        "luxury"
+      ],
+      "capability": [
+        "customer_experience"
+      ]
+    },
+    "inferred_retrieval_concepts": [
+      "high-touch luxury experience",
+      "brand-sensitive retail",
+      "personalized luxury shopping"
+    ],
+    "summary": "Burberry adapted to changing consumer habits around the pandemic. Its omnichannel approach connects digital sales and personal shopping appointments. The report describes full-price online sales performance across its regions.",
+    "metric_count": 0,
+    "limitations": [
+      "Case in a sector report, not a named consulting delivery engagement.",
+      "Growth passage has interleaved columns; no numeric metric promoted to structured proof points.",
+      "No explicit brand-governance or ultra-luxury classification."
+    ],
+    "review_status": "draft",
+    "record_path": "data/processed/cases/burberry.json"
+  },
+  {
+    "case_id": "eneco",
+    "title": "Eneco eMobility: generative AI customer care",
+    "source_id": "eneco",
+    "source_url": "https://www.capgemini.com/wp-content/uploads/2024/05/Eneco-eMobility-client-story-case-study.pdf",
+    "pages": [
+      1,
+      2
+    ],
+    "observed_tags": {
+      "industry": [
+        "energy"
+      ],
+      "function": [
+        "customer_service"
+      ],
+      "technology": [
+        "microsoft_copilot",
+        "generative_ai"
+      ],
+      "ai_use_case": [
+        "conversation_summarization"
+      ],
+      "solution_type": [
+        "service_assistant"
+      ],
+      "outcome_type": [
+        "cycle_time_reduction"
+      ]
+    },
+    "inferred_retrieval_concepts": [
+      "agent assist",
+      "customer communications assistant",
+      "contact center productivity"
+    ],
+    "summary": "Customer-service demand was increasing at Eneco eMobility. Copilot supports customer-care agents with live conversation summaries. The publisher reports lower case wrap-up and training effort.",
+    "metric_count": 2,
+    "limitations": [
+      "Service assistant rather than marketing-content or persona agent."
+    ],
+    "review_status": "draft",
+    "record_path": "data/processed/cases/eneco.json"
+  },
+  {
+    "case_id": "jura",
+    "title": "Jura Coffee: AR and 3D commerce",
+    "source_id": "jura",
+    "source_url": "https://business.adobe.com/content/dam/dx/us/en/resources/ebooks/deliver-an-experience-led-commerce-journey/deliver-experience-led-commerce-journey-ebook.pdf",
+    "pages": [
+      20
+    ],
+    "observed_tags": {
+      "industry": [
+        "consumer_appliances"
+      ],
+      "function": [
+        "commerce"
+      ],
+      "technology": [
+        "augmented_reality",
+        "3d_models"
+      ],
+      "solution_type": [
+        "immersive_commerce"
+      ],
+      "brand_context": [
+        "premium"
+      ],
+      "outcome_type": [
+        "conversion_improvement"
+      ]
+    },
+    "inferred_retrieval_concepts": [
+      "digital showroom",
+      "premium product experience",
+      "brand-sensitive commerce"
+    ],
+    "summary": "Online buyers struggled to assess the qualities of high-end coffee machines. The ecommerce experience added AR and 3D product models. The publisher reports higher conversions on AR-enabled products.",
+    "metric_count": 1,
+    "limitations": [
+      "Premium appliance case; not evidence of ultra-luxury fashion work.",
+      "No AI deployment established in this case."
+    ],
+    "review_status": "draft",
+    "record_path": "data/processed/cases/jura.json"
+  },
+  {
+    "case_id": "navantia",
+    "title": "Navantia: Microsoft 365 Copilot adoption",
+    "source_id": "navantia",
+    "source_url": "https://www.capgemini.com/fi-en/wp-content/uploads/sites/26/2025/07/Navantia-client-story-case-study.pdf",
+    "pages": [
+      1,
+      2,
+      3
+    ],
+    "observed_tags": {
+      "industry": [
+        "aerospace_defense"
+      ],
+      "function": [
+        "workplace_operations"
+      ],
+      "capability": [
+        "change_management"
+      ],
+      "technology": [
+        "microsoft_365_copilot",
+        "generative_ai"
+      ],
+      "solution_type": [
+        "workplace_assistant"
+      ],
+      "outcome_type": [
+        "adoption",
+        "productivity_improvement"
+      ]
+    },
+    "inferred_retrieval_concepts": [
+      "enterprise assistant adoption",
+      "workplace AI enablement",
+      "office productivity"
+    ],
+    "summary": "Navantia sought improved employee productivity through Copilot adoption. A structured Microsoft 365 Copilot adoption and training program supported deployment. The publisher reports license activation and administrative time savings.",
+    "metric_count": 2,
+    "limitations": [
+      "Useful distractor for SDLC queries; relevant to workplace AI requests."
+    ],
+    "review_status": "draft",
+    "record_path": "data/processed/cases/navantia.json"
+  },
+  {
+    "case_id": "pharma_marketing",
+    "title": "Content Generation Agent for Pharma Marketing",
+    "source_id": "pharma_marketing",
+    "source_url": "https://clarkstonconsulting.com/wp-content/uploads/2026/02/AI-for-MLR-Developing-a-Content-Generation-Agent-for-Pharma-Marketing.pdf",
+    "pages": [
+      1,
+      2
+    ],
+    "observed_tags": {
+      "industry": [
+        "biopharmaceuticals"
+      ],
+      "function": [
+        "marketing"
+      ],
+      "ai_use_case": [
+        "marketing_content_generation"
+      ],
+      "solution_type": [
+        "content_agent"
+      ],
+      "brand_context": [
+        "brand_guidelines"
+      ],
+      "outcome_type": [
+        "cycle_time_reduction",
+        "cost_reduction"
+      ],
+      "technology": [
+        "generative_ai"
+      ]
+    },
+    "inferred_retrieval_concepts": [
+      "brand voice assistant",
+      "regulated marketing communications",
+      "campaign content automation"
+    ],
+    "summary": "Marketing content depended on agency drafts and multiple medical/legal/regulatory review cycles. An AI content agent generates on-brand draft assets. The publisher reports shorter production timelines and estimated content-creation cost reductions.",
+    "metric_count": 2,
+    "limitations": [
+      "Publisher compliance claims do not constitute independent regulatory validation.",
+      "Content-generation agent; no specific-persona simulation established.",
+      "The 50–75% figure appears with both draft-turnaround and draft-to-final-approval wording; retain the KPI scope and flag the ambiguity."
+    ],
+    "review_status": "draft",
+    "record_path": "data/processed/cases/pharma_marketing.json"
+  },
+  {
+    "case_id": "pharma_response",
+    "title": "Generative AI for Medical Standard Response Document Creation",
+    "source_id": "pharma_response",
+    "source_url": "https://clarkstonconsulting.com/wp-content/uploads/2024/07/Implementing-Generative-AI-for-Medical-Standard-Response-Document-Creation.pdf",
+    "pages": [
+      1,
+      2
+    ],
+    "observed_tags": {
+      "industry": [
+        "biopharmaceuticals"
+      ],
+      "function": [
+        "medical_information"
+      ],
+      "ai_use_case": [
+        "medical_document_generation"
+      ],
+      "solution_type": [
+        "conversational_assistant"
+      ],
+      "engagement_type": [
+        "proof_of_concept"
+      ],
+      "outcome_type": [
+        "cycle_time_reduction"
+      ],
+      "technology": [
+        "generative_ai"
+      ]
+    },
+    "inferred_retrieval_concepts": [
+      "communications drafting assistant",
+      "medical information automation",
+      "structured response generation"
+    ],
+    "summary": "Preparing medical standard response documents was labor-intensive. A proof-of-concept chatbot supported medical response document generation. The publisher describes first-draft work shrinking from multiple days to one model prompt and response.",
+    "metric_count": 1,
+    "limitations": [
+      "Medical communications rather than marketing content.",
+      "No-hallucination claim is not promoted as a verified performance metric."
+    ],
+    "review_status": "draft",
+    "record_path": "data/processed/cases/pharma_response.json"
+  },
+  {
+    "case_id": "sdlc_agent",
+    "title": "Accelerated Software Delivery with Agentic AI",
+    "source_id": "sdlc_agent",
+    "source_url": "https://www.globallogic.com/wp-content/uploads/2026/09/accelerated-delivery-Agentic-AI-in-the-SDLC.pdf",
+    "pages": [
+      1,
+      2
+    ],
+    "observed_tags": {
+      "industry": [
+        "mobility_services"
+      ],
+      "engagement_type": [
+        "proof_of_concept"
+      ],
+      "capability": [
+        "software_engineering"
+      ],
+      "ai_use_case": [
+        "backlog_generation",
+        "test_generation"
+      ],
+      "lifecycle_stage": [
+        "requirements",
+        "testing"
+      ],
+      "outcome_type": [
+        "cycle_time_reduction",
+        "test_coverage_improvement"
+      ],
+      "technology": [
+        "artificial_intelligence"
+      ]
+    },
+    "inferred_retrieval_concepts": [
+      "AI-enabled SDLC",
+      "release acceleration",
+      "acceptance criteria automation"
+    ],
+    "summary": "A mobility-services provider sought AI-enabled software delivery improvements. A controlled PoC used backlog and testing agents for user stories and test scripts. The publisher reports shorter requirements and test-generation cycles and increased test coverage.",
+    "metric_count": 3,
+    "limitations": [
+      "Controlled PoC; do not generalize to enterprise-wide deployment."
+    ],
+    "review_status": "draft",
+    "record_path": "data/processed/cases/sdlc_agent.json"
+  },
+  {
+    "case_id": "sdlc_energy",
+    "title": "Streamlining the SDLC for a Leader in Global Energy Technology",
+    "source_id": "sdlc_energy",
+    "source_url": "https://www.globallogic.com/wp-content/uploads/2025/02/Streamlining-the-SDLC-for-a-leader-in-global-energy-technology.pdf",
+    "pages": [
+      1,
+      2
+    ],
+    "observed_tags": {
+      "industry": [
+        "energy"
+      ],
+      "capability": [
+        "software_engineering"
+      ],
+      "technology": [
+        "artificial_intelligence"
+      ],
+      "ai_use_case": [
+        "code_review",
+        "documentation_generation",
+        "test_generation"
+      ],
+      "lifecycle_stage": [
+        "testing"
+      ],
+      "outcome_type": [
+        "productivity_improvement",
+        "test_coverage_improvement"
+      ]
+    },
+    "inferred_retrieval_concepts": [
+      "AI-enabled SDLC",
+      "developer productivity",
+      "QA automation"
+    ],
+    "summary": "An energy-technology organization needed more efficient software engineering. AI-powered automation supported code review, documentation, and unit tests. The publisher reports approximate improvements in productivity and test coverage.",
+    "metric_count": 2,
+    "limitations": [
+      "AI is explicit; the selected pages do not establish a specific generative model."
+    ],
+    "review_status": "draft",
+    "record_path": "data/processed/cases/sdlc_energy.json"
+  },
+  {
+    "case_id": "sdlc_modernization",
+    "title": "Modernizing Critical Digital Services with AI-Powered SDLC",
+    "source_id": "sdlc_modernization",
+    "source_url": "https://www.globallogic.com/wp-content/uploads/2026/04/ai-powered-sdlc-acceleration.pdf",
+    "pages": [
+      1,
+      2
+    ],
+    "observed_tags": {
+      "industry": [
+        "biopharmaceuticals"
+      ],
+      "capability": [
+        "software_engineering",
+        "application_modernization"
+      ],
+      "technology": [
+        "generative_ai",
+        "azure"
+      ],
+      "ai_use_case": [
+        "code_conversion",
+        "test_generation"
+      ],
+      "lifecycle_stage": [
+        "modernization",
+        "deployment"
+      ],
+      "outcome_type": [
+        "delivery_acceleration",
+        "cost_reduction"
+      ]
+    },
+    "inferred_retrieval_concepts": [
+      "AI-assisted migration",
+      "legacy modernization",
+      "software delivery efficiency"
+    ],
+    "summary": "A pharmaceutical organization needed to modernize legacy web services. GenAI-driven modernization combined Azure, automated CI/CD, and test generation. The publisher reports faster conversion delivery and cost savings across the modernization effort.",
+    "metric_count": 2,
+    "limitations": [],
+    "review_status": "draft",
+    "record_path": "data/processed/cases/sdlc_modernization.json"
+  }
+]

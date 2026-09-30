@@ -1,0 +1,202 @@
+{
+  "schema_version": "1.0",
+  "case_id": "pharma_marketing",
+  "title": "Content Generation Agent for Pharma Marketing",
+  "source_id": "pharma_marketing",
+  "pages": [
+    1,
+    2
+  ],
+  "organization": null,
+  "engagement_year": null,
+  "observed_tags": [
+    {
+      "dimension": "industry",
+      "value": "biopharmaceuticals",
+      "evidence_ids": [
+        "a"
+      ]
+    },
+    {
+      "dimension": "function",
+      "value": "marketing",
+      "evidence_ids": [
+        "marketing"
+      ]
+    },
+    {
+      "dimension": "ai_use_case",
+      "value": "marketing_content_generation",
+      "evidence_ids": [
+        "b",
+        "d"
+      ]
+    },
+    {
+      "dimension": "solution_type",
+      "value": "content_agent",
+      "evidence_ids": [
+        "d"
+      ]
+    },
+    {
+      "dimension": "brand_context",
+      "value": "brand_guidelines",
+      "evidence_ids": [
+        "e"
+      ]
+    },
+    {
+      "dimension": "outcome_type",
+      "value": "cycle_time_reduction",
+      "evidence_ids": [
+        "f",
+        "g",
+        "h"
+      ]
+    },
+    {
+      "dimension": "outcome_type",
+      "value": "cost_reduction",
+      "evidence_ids": [
+        "i"
+      ]
+    },
+    {
+      "dimension": "technology",
+      "value": "generative_ai",
+      "evidence_ids": [
+        "genai"
+      ]
+    }
+  ],
+  "inferred_retrieval_concepts": [
+    "brand voice assistant",
+    "regulated marketing communications",
+    "campaign content automation"
+  ],
+  "summaries": {
+    "challenge": {
+      "text": "Marketing content depended on agency drafts and multiple medical/legal/regulatory review cycles.",
+      "evidence_ids": [
+        "b",
+        "c",
+        "marketing"
+      ]
+    },
+    "solution": {
+      "text": "An AI content agent generates on-brand draft assets.",
+      "evidence_ids": [
+        "d",
+        "e"
+      ]
+    },
+    "outcome": {
+      "text": "The publisher reports shorter production timelines and estimated content-creation cost reductions.",
+      "evidence_ids": [
+        "f",
+        "g",
+        "h",
+        "i"
+      ]
+    }
+  },
+  "evidence": {
+    "a": {
+      "source_id": "pharma_marketing",
+      "page": 1,
+      "quote": "biopharmaceutical company"
+    },
+    "b": {
+      "source_id": "pharma_marketing",
+      "page": 1,
+      "quote": "content development process."
+    },
+    "c": {
+      "source_id": "pharma_marketing",
+      "page": 1,
+      "quote": "external agencies and multiple cycles through the Medical Legal Regulatory (MLR)"
+    },
+    "d": {
+      "source_id": "pharma_marketing",
+      "page": 1,
+      "quote": "AI-driven content generation agent"
+    },
+    "e": {
+      "source_id": "pharma_marketing",
+      "page": 1,
+      "quote": "tool generates on-brand assets"
+    },
+    "f": {
+      "source_id": "pharma_marketing",
+      "page": 2,
+      "quote": "50–75% reduction in content"
+    },
+    "g": {
+      "source_id": "pharma_marketing",
+      "page": 2,
+      "quote": "production timeline per asset (draft"
+    },
+    "h": {
+      "source_id": "pharma_marketing",
+      "page": 2,
+      "quote": "creation to final approval)"
+    },
+    "i": {
+      "source_id": "pharma_marketing",
+      "page": 2,
+      "quote": "estimated 60% reduction in content creation costs"
+    },
+    "genai": {
+      "source_id": "pharma_marketing",
+      "page": 2,
+      "quote": "Implemented a generative AI platform"
+    },
+    "marketing": {
+      "source_id": "pharma_marketing",
+      "page": 1,
+      "quote": "transform its marketing"
+    }
+  },
+  "proof_points": [
+    {
+      "text": "Reported reduction in content production timeline per asset.",
+      "evidence_ids": [
+        "f",
+        "g",
+        "h"
+      ],
+      "metric": "50–75%",
+      "scope": "Draft creation to final approval",
+      "baseline": null,
+      "measurement_period": null,
+      "qualification": "Publisher also describes first-draft turnaround separately; do not conflate the two.",
+      "status": "publisher_reported"
+    },
+    {
+      "text": "Estimated reduction in content creation costs.",
+      "evidence_ids": [
+        "i"
+      ],
+      "metric": "estimated 60%",
+      "scope": "Content creation",
+      "baseline": null,
+      "measurement_period": null,
+      "qualification": "Estimate, not independently audited savings.",
+      "status": "publisher_reported"
+    }
+  ],
+  "limitations": [
+    "Publisher compliance claims do not constitute independent regulatory validation.",
+    "Content-generation agent; no specific-persona simulation established.",
+    "The 50–75% figure appears with both draft-turnaround and draft-to-final-approval wording; retain the KPI scope and flag the ambiguity."
+  ],
+  "classification_metadata": {
+    "method": "assistant_curated",
+    "classifier": "ChatGPT assistant curation and source-text review; no external classification API",
+    "classified_on": "2026-09-30",
+    "taxonomy_version": "1.0",
+    "source_sha256": "47570563a8bbeb9977540666b2a565b7f9f0e711f9dc9eb997113ad33f2672b9"
+  },
+  "review_status": "draft"
+}

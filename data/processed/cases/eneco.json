@@ -1,0 +1,199 @@
+{
+  "schema_version": "1.0",
+  "case_id": "eneco",
+  "title": "Eneco eMobility: generative AI customer care",
+  "source_id": "eneco",
+  "pages": [
+    1,
+    2
+  ],
+  "organization": {
+    "text": "Eneco eMobility",
+    "evidence_ids": [
+      "a"
+    ]
+  },
+  "engagement_year": null,
+  "observed_tags": [
+    {
+      "dimension": "industry",
+      "value": "energy",
+      "evidence_ids": [
+        "b"
+      ]
+    },
+    {
+      "dimension": "function",
+      "value": "customer_service",
+      "evidence_ids": [
+        "c"
+      ]
+    },
+    {
+      "dimension": "technology",
+      "value": "microsoft_copilot",
+      "evidence_ids": [
+        "d"
+      ]
+    },
+    {
+      "dimension": "ai_use_case",
+      "value": "conversation_summarization",
+      "evidence_ids": [
+        "e"
+      ]
+    },
+    {
+      "dimension": "solution_type",
+      "value": "service_assistant",
+      "evidence_ids": [
+        "c",
+        "d",
+        "e"
+      ]
+    },
+    {
+      "dimension": "outcome_type",
+      "value": "cycle_time_reduction",
+      "evidence_ids": [
+        "f",
+        "h",
+        "i"
+      ]
+    },
+    {
+      "dimension": "technology",
+      "value": "generative_ai",
+      "evidence_ids": [
+        "genai"
+      ]
+    }
+  ],
+  "inferred_retrieval_concepts": [
+    "agent assist",
+    "customer communications assistant",
+    "contact center productivity"
+  ],
+  "summaries": {
+    "challenge": {
+      "text": "Customer-service demand was increasing at Eneco eMobility.",
+      "evidence_ids": [
+        "a",
+        "c",
+        "demand"
+      ]
+    },
+    "solution": {
+      "text": "Copilot supports customer-care agents with live conversation summaries.",
+      "evidence_ids": [
+        "d",
+        "e"
+      ]
+    },
+    "outcome": {
+      "text": "The publisher reports lower case wrap-up and training effort.",
+      "evidence_ids": [
+        "f",
+        "g",
+        "h",
+        "i"
+      ]
+    }
+  },
+  "evidence": {
+    "a": {
+      "source_id": "eneco",
+      "page": 1,
+      "quote": "Client: Eneco eMobility"
+    },
+    "b": {
+      "source_id": "eneco",
+      "page": 1,
+      "quote": "Industry: Energy transition and utilities"
+    },
+    "c": {
+      "source_id": "eneco",
+      "page": 1,
+      "quote": "on customer service and was looking for a solution"
+    },
+    "d": {
+      "source_id": "eneco",
+      "page": 2,
+      "quote": "Copilot provides relevant customer relationship"
+    },
+    "e": {
+      "source_id": "eneco",
+      "page": 2,
+      "quote": "conversation summaries"
+    },
+    "f": {
+      "source_id": "eneco",
+      "page": 1,
+      "quote": "average wrap-up time by 50%"
+    },
+    "g": {
+      "source_id": "eneco",
+      "page": 1,
+      "quote": "Reduced training time from four to just one hour"
+    },
+    "h": {
+      "source_id": "eneco",
+      "page": 2,
+      "quote": "average case wrap-up time by"
+    },
+    "i": {
+      "source_id": "eneco",
+      "page": 2,
+      "quote": "almost 50%"
+    },
+    "genai": {
+      "source_id": "eneco",
+      "page": 2,
+      "quote": "Copilot Gen AI-powered solution"
+    },
+    "demand": {
+      "source_id": "eneco",
+      "page": 1,
+      "quote": "volume and duration of demand"
+    }
+  },
+  "proof_points": [
+    {
+      "text": "Reduction in average case wrap-up time.",
+      "evidence_ids": [
+        "f",
+        "h",
+        "i"
+      ],
+      "metric": "almost 50%",
+      "scope": "Customer-care case wrap-up",
+      "baseline": null,
+      "measurement_period": null,
+      "qualification": "Overview rounds to 50%; narrative says almost 50%.",
+      "status": "publisher_reported"
+    },
+    {
+      "text": "Reduced training time.",
+      "evidence_ids": [
+        "g"
+      ],
+      "metric": "4 hours → 1 hour",
+      "scope": "Mastering Copilot-assisted functionality",
+      "baseline": "4 hours",
+      "measurement_period": null,
+      "qualification": "Not the duration of all employee onboarding.",
+      "status": "publisher_reported"
+    }
+  ],
+  "limitations": [
+    "Service assistant rather than marketing-content or persona agent."
+  ],
+  "classification_metadata": {
+    "method": "assistant_curated",
+    "classifier": "ChatGPT assistant curation and source-text review; no external classification API",
+    "classified_on": "2026-09-30",
+    "taxonomy_version": "1.0",
+    "source_sha256": "951d0ee32b5346e6e7d3e49d03bf9473202e1a2d2a6e0f5fcc9fe9ac8d979c70"
+  },
+  "review_status": "draft"
+}

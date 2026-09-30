@@ -1,0 +1,175 @@
+{
+  "schema_version": "1.0",
+  "case_id": "pharma_response",
+  "title": "Generative AI for Medical Standard Response Document Creation",
+  "source_id": "pharma_response",
+  "pages": [
+    1,
+    2
+  ],
+  "organization": null,
+  "engagement_year": null,
+  "observed_tags": [
+    {
+      "dimension": "industry",
+      "value": "biopharmaceuticals",
+      "evidence_ids": [
+        "a"
+      ]
+    },
+    {
+      "dimension": "function",
+      "value": "medical_information",
+      "evidence_ids": [
+        "b"
+      ]
+    },
+    {
+      "dimension": "ai_use_case",
+      "value": "medical_document_generation",
+      "evidence_ids": [
+        "e"
+      ]
+    },
+    {
+      "dimension": "solution_type",
+      "value": "conversational_assistant",
+      "evidence_ids": [
+        "d"
+      ]
+    },
+    {
+      "dimension": "engagement_type",
+      "value": "proof_of_concept",
+      "evidence_ids": [
+        "i"
+      ]
+    },
+    {
+      "dimension": "outcome_type",
+      "value": "cycle_time_reduction",
+      "evidence_ids": [
+        "f",
+        "g",
+        "h"
+      ]
+    },
+    {
+      "dimension": "technology",
+      "value": "generative_ai",
+      "evidence_ids": [
+        "genai"
+      ]
+    }
+  ],
+  "inferred_retrieval_concepts": [
+    "communications drafting assistant",
+    "medical information automation",
+    "structured response generation"
+  ],
+  "summaries": {
+    "challenge": {
+      "text": "Preparing medical standard response documents was labor-intensive.",
+      "evidence_ids": [
+        "b",
+        "c"
+      ]
+    },
+    "solution": {
+      "text": "A proof-of-concept chatbot supported medical response document generation.",
+      "evidence_ids": [
+        "d",
+        "e",
+        "i"
+      ]
+    },
+    "outcome": {
+      "text": "The publisher describes first-draft work shrinking from multiple days to one model prompt and response.",
+      "evidence_ids": [
+        "f",
+        "g",
+        "h"
+      ]
+    }
+  },
+  "evidence": {
+    "a": {
+      "source_id": "pharma_response",
+      "page": 1,
+      "quote": "leading biopharmaceutical company"
+    },
+    "b": {
+      "source_id": "pharma_response",
+      "page": 1,
+      "quote": "creation of medical standard response documents."
+    },
+    "c": {
+      "source_id": "pharma_response",
+      "page": 1,
+      "quote": "process of creating these documents is labor-intensive"
+    },
+    "d": {
+      "source_id": "pharma_response",
+      "page": 2,
+      "quote": "business user-accessible chatbot"
+    },
+    "e": {
+      "source_id": "pharma_response",
+      "page": 2,
+      "quote": "generating medical standard response documents"
+    },
+    "f": {
+      "source_id": "pharma_response",
+      "page": 2,
+      "quote": "Medical SRD first draft time reduced"
+    },
+    "g": {
+      "source_id": "pharma_response",
+      "page": 2,
+      "quote": "from a multiple-day effort to a single"
+    },
+    "h": {
+      "source_id": "pharma_response",
+      "page": 2,
+      "quote": "model prompt and response"
+    },
+    "i": {
+      "source_id": "pharma_response",
+      "page": 2,
+      "quote": "Proof of concept pipeline"
+    },
+    "genai": {
+      "source_id": "pharma_response",
+      "page": 1,
+      "quote": "generative AI-powered tool"
+    }
+  },
+  "proof_points": [
+    {
+      "text": "Reported shortening of first-draft effort.",
+      "evidence_ids": [
+        "f",
+        "g",
+        "h"
+      ],
+      "metric": "multiple days → one prompt/response",
+      "scope": "Medical standard response first drafts",
+      "baseline": "Multiple-day effort",
+      "measurement_period": null,
+      "qualification": "Qualitative effort comparison; no elapsed response time or numeric percentage supplied.",
+      "status": "publisher_reported"
+    }
+  ],
+  "limitations": [
+    "Medical communications rather than marketing content.",
+    "No-hallucination claim is not promoted as a verified performance metric."
+  ],
+  "classification_metadata": {
+    "method": "assistant_curated",
+    "classifier": "ChatGPT assistant curation and source-text review; no external classification API",
+    "classified_on": "2026-09-30",
+    "taxonomy_version": "1.0",
+    "source_sha256": "89a4e7f465acc25c098619bbb1db844516f63e39e34b58f48590dd32593f7b57"
+  },
+  "review_status": "draft"
+}
