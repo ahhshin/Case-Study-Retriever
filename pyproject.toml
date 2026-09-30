@@ -9,5 +9,8 @@ dependencies = ["pydantic>=2,<3"]
 [project.scripts]
 case-ingest = "case_studies.pipeline:main"
 case-validate = "case_studies.metadata:main"
+case-search = "case_studies.retrieval:main"
+case-serve = "case_studies.server:main"
+case-demo = "case_studies.demo:main"
 [tool.setuptools.packages.find]
 where = ["src"]

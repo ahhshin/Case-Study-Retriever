@@ -1,0 +1,54 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Case Study Retriever</title>
+<style>
+*{box-sizing:border-box}body{margin:0;background:#f5f7fb;color:#17223b;font:16px/1.55 system-ui,sans-serif}main{max-width:850px;margin:48px auto;padding:0 24px}h1{font-size:28px;letter-spacing:-.7px;margin:0 0 6px}p{margin:8px 0 16px}.muted{color:#58647a;font-size:14px}form{display:flex;gap:10px;margin:24px 0 12px}input{flex:1;min-width:0;border:1px solid #b5c0d2;border-radius:8px;padding:14px;font:inherit;background:white}button{border:0;border-radius:8px;background:#244ae4;color:white;padding:12px 20px;font:inherit;cursor:pointer}button:disabled{opacity:.6;cursor:wait}button:focus-visible,input:focus-visible,a:focus-visible,summary:focus-visible{outline:3px solid #91a8ff;outline-offset:3px}.examples{display:flex;gap:8px;flex-wrap:wrap}.examples button{background:#e7edff;color:#2440a7;font-size:14px;padding:8px 12px}article{background:white;border:1px solid #dce3ef;border-radius:12px;padding:22px;margin:16px 0}h2{font-size:20px;margin:0 0 10px}a{color:#244ae4}li{margin:8px 0}blockquote{margin:12px 0;padding-left:14px;border-left:3px solid #b7c6fb;overflow-wrap:anywhere}.tag{display:inline-block;background:#f0f3f9;padding:3px 8px;margin:3px;font-size:13px;border-radius:5px}summary{cursor:pointer;color:#2440a7}details{margin:12px 0}#status{margin:20px 0;font-size:14px}.error{color:#a62727}footer{margin-top:28px;font-size:14px;color:#58647a}@media(max-width:500px){main{margin:24px auto;padding:0 16px}form{flex-direction:column}button{min-height:44px}article{padding:16px}}
+</style></head><body><main>
+<h1>Case Study Retriever</h1><p class="muted">Search ten case studies. See why they match and open the supporting source.</p>
+<form id="search"><label for="query" style="position:absolute;left:-10000px">Find a case study</label><input id="query" placeholder="Find me a case study about luxury brands" maxlength="2000" required><button id="submit">Search</button></form>
+<div class="examples"><button type="button" data-query="Find me a case study about luxury brands">Luxury brands</button><button type="button" data-query="AI that accelerates software delivery">AI + software delivery</button><button type="button" data-query="AI marketing content generation">Marketing content</button></div>
+<p id="status" role="status" aria-live="polite">Enter a prompt or try an example.</p><div id="results"></div><footer id="mode">Loading search mode…</footer>
+</main><script>
+const EMBEDDED = null; // Replaced by the reproducible standalone demo exporter.
+const CONFIG = null;
+const $=id=>document.getElementById(id);
+function el(tag,text,className){const e=document.createElement(tag);if(text)e.textContent=text;if(className)e.className=className;return e;}
+function link(text,url){const a=el('a',text);if(/^https:\/\//.test(url)){a.href=url;a.target='_blank';a.rel='noopener noreferrer';}return a;}
+function tokens(s){return new Set((s.toLowerCase().match(/[a-z0-9]+/g)||[]).filter(t=>!CONFIG.stop.includes(t)));}
+function overlap(a,b){return [...a].filter(x=>b.has(x)).length;}
+function baseline(query){
+ const q=' '+(query.toLowerCase().match(/[a-z0-9]+/g)||[]).join(' ')+' ';
+ const terms=tokens(query),labels=Object.entries(CONFIG.aliases).filter(([k,v])=>v.some(x=>q.includes(' '+x+' '))).map(([k])=>k);
+ const ranked=[];
+ for(const e of EMBEDDED){const tags=new Set(Object.values(e.observed_tags).flat());
+ if(labels.includes('luxury')&&!tags.has('luxury'))continue;
+ if(labels.includes('artificial_intelligence')&&!['artificial_intelligence','generative_ai','microsoft_copilot','microsoft_365_copilot'].some(x=>tags.has(x)))continue;
+ const matched=labels.filter(x=>tags.has(x)||(x==='artificial_intelligence'&&['generative_ai','microsoft_copilot','microsoft_365_copilot'].some(t=>tags.has(t))));
+ if(labels.some(x=>!matched.includes(x)))continue;
+ const score=6*matched.length+3*overlap(terms,tokens(e.title))+overlap(terms,tokens(e.summary))+overlap(terms,tokens(e.inferred_retrieval_concepts.join(' ')));
+ if(!score)continue;
+ const r=e.record;let ids=r.observed_tags.filter(t=>matched.includes(t.value)).flatMap(t=>t.evidence_ids);
+ if(!ids.length)ids=Object.entries(r.evidence).filter(([k,v])=>overlap(terms,tokens(v.quote))).map(([k])=>k);
+ if(!ids.length)ids=r.summaries.solution.evidence_ids;
+ const evidence=[...new Set(ids)].slice(0,12).map(k=>({...r.evidence[k],evidence_id:k,source_url:e.source_url+'#page='+r.evidence[k].page}));
+ ranked.push({score,case_id:e.case_id,title:e.title,summary:e.summary,tags:e.observed_tags,evidence,proof_points:r.proof_points,limitations:r.limitations,review_status:r.review_status,source_url:e.source_url,reasons:matched.length?matched.map(x=>'Matches '+x.replaceAll('_',' ')):['Keyword match in case metadata']});
+ }
+ ranked.sort((a,b)=>b.score-a.score||a.case_id.localeCompare(b.case_id));return {results:ranked.slice(0,3),mode:'metadata'};
+}
+function display(data){$('results').replaceChildren();$('status').className='';$('status').textContent=data.results.length?`${data.results.length} matching ${data.results.length===1?'case':'cases'}`:'No matching case found. Try another description.';
+ for(const r of data.results){const card=el('article');card.append(el('h2',r.title),el('p',r.summary),el('p',r.reasons.join(' · '),'muted'));
+ const tags=el('div');for(const dim of ['industry','ai_use_case','brand_context'])for(const t of r.tags[dim]||[])tags.append(el('span',t.replaceAll('_',' '),'tag'));card.append(tags);
+ const evidence=el('details');evidence.append(el('summary','Supporting evidence'));
+ for(const ev of r.evidence){evidence.append(el('blockquote',ev.quote),link(`Source · page ${ev.page}`,ev.source_url));}card.append(evidence);
+ if(r.proof_points.length){const d=el('details');d.append(el('summary','Reported outcomes'));const ul=el('ul');for(const p of r.proof_points){const li=el('li',`${p.metric}: ${p.text} Scope: ${p.scope}${p.qualification?' '+p.qualification:''}`);ul.append(li);}d.append(ul);card.append(d);}
+ if(r.limitations.length){const d=el('details');d.append(el('summary','Case limitations'));const ul=el('ul');r.limitations.forEach(x=>ul.append(el('li',x)));d.append(ul);card.append(d);}
+ card.append(link('Open original source',r.source_url),el('p',`Review status: ${r.review_status}. Outcomes are publisher-reported.`,'muted'));$('results').append(card);
+ }
+ $('mode').textContent=data.mode==='model'?'Model search · evidence IDs validated; check relevance against the source.':'Metadata search · no model called. The case records are drafts.';
+}
+async function search(){const query=$('query').value.trim();if(!query)return;$('submit').disabled=true;$('status').textContent='Searching…';
+ try{let data;if(EMBEDDED)data=baseline(query);else{const r=await fetch('/api/search',{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify({query})});data=await r.json();if(!r.ok)throw new Error(data.error||'Search failed');}display(data);}
+ catch(e){$('results').replaceChildren();$('status').textContent=e.message;$('status').className='error';}finally{$('submit').disabled=false;}}
+$('search').addEventListener('submit',e=>{e.preventDefault();search();});document.querySelectorAll('[data-query]').forEach(b=>b.addEventListener('click',()=>{$('query').value=b.dataset.query;search();}));
+if(EMBEDDED)$('mode').textContent='Metadata search · no model called. Works offline; the case records are drafts.';
+else fetch('/api/status').then(r=>r.json()).then(d=>{$('mode').textContent=d.mode==='model'?'Model search ready.':'Metadata search ready · no model called.';}).catch(()=>{$('mode').textContent='Start case-serve to use this interface, or open demo.html for offline testing.';});
+</script></body></html>

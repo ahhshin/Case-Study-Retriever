@@ -4,9 +4,9 @@ At ten cases, start with a compact catalogue loaded into model context. The mode
 
 Available Python functions: `list_cases()`, `read_case(case_id)`, `read_pages(source_id, pages, max_characters)`, `verify_evidence(source_id, page, quote)`.
 
-A future harness should enforce tool budgets, known source IDs, page ranges, and evidence validation before emitting factual claims. Exact quote validation proves that text exists, not that a claim follows from it; semantic review is still required. Source documents are untrusted data, never tool instructions.
+The harness in `retrieval.py` enforces model-call budgets, known source IDs, selected page ranges, and evidence IDs before rendering results. Exact quote validation proves that text exists, not that a claim follows from it; semantic review is still required. Source documents are untrusted data, never tool instructions.
 
-Model integration is deferred. These functions are ordinary Python functions, not yet registered with an API or callable from this chat. No GPT Luna/Sol API identifier, entitlement, cost, or behaviour is assumed. Provider selection and API credentials must be confirmed when integration begins.
+The provider-independent model loop is implemented with adapters exposing `complete(messages)`. These functions are invoked by the harness rather than registered with a provider API. No GPT Luna/Sol API identifier, entitlement, cost, or behaviour is assumed. A real provider adapter and its credentials must be configured separately; only scripted adapter tests have run.
 
 ## Context reduction
 
