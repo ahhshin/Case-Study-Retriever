@@ -1,0 +1,72 @@
+[
+  {
+    "id": "jura",
+    "status": "parsed",
+    "pages": 32,
+    "characters": 55342,
+    "sha256": "f667136fb70bf76643eb77466e661339eae4db31c363d34b0324296c9f6d846d"
+  },
+  {
+    "id": "burberry",
+    "status": "parsed",
+    "pages": 58,
+    "characters": 299547,
+    "sha256": "28a8676a2ffed2977b0330c0776ab22024cd998bd6b0192db52ef54d95711c08"
+  },
+  {
+    "id": "sdlc_agent",
+    "status": "parsed",
+    "pages": 2,
+    "characters": 2180,
+    "sha256": "670cf4b3f2dde627f0d8418cfd199ae4a72cb39f3a1c0bbdb4370aa4f61e4b99"
+  },
+  {
+    "id": "sdlc_modernization",
+    "status": "parsed",
+    "pages": 2,
+    "characters": 2349,
+    "sha256": "d8d740f9ede53c4a69bd6232f93062a9a1759658a773e2ee7c8de31beac5688f"
+  },
+  {
+    "id": "sdlc_energy",
+    "status": "parsed",
+    "pages": 2,
+    "characters": 2033,
+    "sha256": "ef94ea34f67f53d6a6e332c72d2faa1e3515f73fa6c60ccd187c90804e65825e"
+  },
+  {
+    "id": "pharma_marketing",
+    "status": "parsed",
+    "pages": 2,
+    "characters": 7664,
+    "sha256": "47570563a8bbeb9977540666b2a565b7f9f0e711f9dc9eb997113ad33f2672b9"
+  },
+  {
+    "id": "pharma_response",
+    "status": "parsed",
+    "pages": 2,
+    "characters": 6299,
+    "sha256": "89a4e7f465acc25c098619bbb1db844516f63e39e34b58f48590dd32593f7b57"
+  },
+  {
+    "id": "eneco",
+    "status": "parsed",
+    "pages": 3,
+    "characters": 8829,
+    "sha256": "951d0ee32b5346e6e7d3e49d03bf9473202e1a2d2a6e0f5fcc9fe9ac8d979c70"
+  },
+  {
+    "id": "abn_amro",
+    "status": "parsed",
+    "pages": 3,
+    "characters": 7124,
+    "sha256": "412cdf41757517f92606844496e0d5d1edb266fc7a13a1d56d9e6c5c6cb1b020"
+  },
+  {
+    "id": "navantia",
+    "status": "parsed",
+    "pages": 4,
+    "characters": 8532,
+    "sha256": "2428aa385aff6c03742330056f5c31fa50ea942d04b0928c82ec53b0e67f18b1"
+  }
+]

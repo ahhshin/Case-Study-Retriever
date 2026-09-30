@@ -1,0 +1,141 @@
+[
+  {
+    "id": "jura",
+    "title": "Jura Coffee: AR and 3D commerce",
+    "publisher": "Adobe",
+    "source_url": "https://business.adobe.com/content/dam/dx/us/en/resources/ebooks/deliver-an-experience-led-commerce-journey/deliver-experience-led-commerce-journey-ebook.pdf",
+    "format": "pdf",
+    "selection_theme": "premium_experience",
+    "document_style": "ebook_case",
+    "redistribution_status": "not_cleared",
+    "case_pages": [
+      20
+    ]
+  },
+  {
+    "id": "burberry",
+    "title": "Burberry: omnichannel luxury retail",
+    "publisher": "RetailX / InternetRetailing",
+    "source_url": "https://form.internetretailing.net/cvgdehjvc12/GLOBAL-LUXURY-SECTOR-REPORT-2023_v5_PS1.pdf",
+    "format": "pdf",
+    "selection_theme": "luxury",
+    "document_style": "report_case",
+    "redistribution_status": "not_cleared",
+    "case_pages": [
+      48
+    ]
+  },
+  {
+    "id": "sdlc_agent",
+    "title": "Accelerated Software Delivery with Agentic AI",
+    "publisher": "GlobalLogic",
+    "source_url": "https://www.globallogic.com/wp-content/uploads/2026/09/accelerated-delivery-Agentic-AI-in-the-SDLC.pdf",
+    "format": "pdf",
+    "selection_theme": "ai_sdlc",
+    "document_style": "case_brief",
+    "redistribution_status": "not_cleared",
+    "case_pages": [
+      1,
+      2
+    ]
+  },
+  {
+    "id": "sdlc_modernization",
+    "title": "Modernizing Critical Digital Services with AI-Powered SDLC",
+    "publisher": "GlobalLogic",
+    "source_url": "https://www.globallogic.com/wp-content/uploads/2026/04/ai-powered-sdlc-acceleration.pdf",
+    "format": "pdf",
+    "selection_theme": "ai_sdlc",
+    "document_style": "case_brief",
+    "redistribution_status": "not_cleared",
+    "case_pages": [
+      1,
+      2
+    ]
+  },
+  {
+    "id": "sdlc_energy",
+    "title": "Streamlining the SDLC for a Leader in Global Energy Technology",
+    "publisher": "GlobalLogic",
+    "source_url": "https://www.globallogic.com/wp-content/uploads/2025/02/Streamlining-the-SDLC-for-a-leader-in-global-energy-technology.pdf",
+    "format": "pdf",
+    "selection_theme": "ai_sdlc",
+    "document_style": "case_brief",
+    "redistribution_status": "not_cleared",
+    "case_pages": [
+      1,
+      2
+    ]
+  },
+  {
+    "id": "pharma_marketing",
+    "title": "Content Generation Agent for Pharma Marketing",
+    "publisher": "Clarkston Consulting",
+    "source_url": "https://clarkstonconsulting.com/wp-content/uploads/2026/02/AI-for-MLR-Developing-a-Content-Generation-Agent-for-Pharma-Marketing.pdf",
+    "format": "pdf",
+    "selection_theme": "ai_content",
+    "document_style": "case_brief",
+    "redistribution_status": "not_cleared",
+    "case_pages": [
+      1,
+      2
+    ]
+  },
+  {
+    "id": "pharma_response",
+    "title": "Generative AI for Medical Standard Response Document Creation",
+    "publisher": "Clarkston Consulting",
+    "source_url": "https://clarkstonconsulting.com/wp-content/uploads/2024/07/Implementing-Generative-AI-for-Medical-Standard-Response-Document-Creation.pdf",
+    "format": "pdf",
+    "selection_theme": "ai_communications",
+    "document_style": "case_brief",
+    "redistribution_status": "not_cleared",
+    "case_pages": [
+      1,
+      2
+    ]
+  },
+  {
+    "id": "eneco",
+    "title": "Eneco eMobility: generative AI customer care",
+    "publisher": "Capgemini",
+    "source_url": "https://www.capgemini.com/wp-content/uploads/2024/05/Eneco-eMobility-client-story-case-study.pdf",
+    "format": "pdf",
+    "selection_theme": "ai_assistant",
+    "document_style": "case_brief",
+    "redistribution_status": "not_cleared",
+    "case_pages": [
+      1,
+      2
+    ]
+  },
+  {
+    "id": "abn_amro",
+    "title": "ABN AMRO: future-focused Gen AI development",
+    "publisher": "Capgemini",
+    "source_url": "https://www.capgemini.com/wp-content/uploads/2025/05/ABN-AMRO-client-story-case-study.pdf",
+    "format": "pdf",
+    "selection_theme": "general_ai_transformation",
+    "document_style": "case_brief",
+    "redistribution_status": "not_cleared",
+    "case_pages": [
+      1,
+      2
+    ]
+  },
+  {
+    "id": "navantia",
+    "title": "Navantia: Microsoft 365 Copilot adoption",
+    "publisher": "Capgemini",
+    "source_url": "https://www.capgemini.com/fi-en/wp-content/uploads/sites/26/2025/07/Navantia-client-story-case-study.pdf",
+    "format": "pdf",
+    "selection_theme": "office_productivity_distractor",
+    "document_style": "case_brief",
+    "redistribution_status": "not_cleared",
+    "case_pages": [
+      1,
+      2,
+      3
+    ]
+  }
+]

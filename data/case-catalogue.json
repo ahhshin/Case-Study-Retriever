@@ -1,0 +1,131 @@
+[
+  {
+    "case_id": "jura",
+    "title": "Jura Coffee: AR and 3D commerce",
+    "publisher": "Adobe",
+    "source_id": "jura",
+    "pages": [
+      20
+    ],
+    "selection_theme": "premium_experience",
+    "review_status": "unclassified",
+    "document_style": "ebook_case"
+  },
+  {
+    "case_id": "burberry",
+    "title": "Burberry: omnichannel luxury retail",
+    "publisher": "RetailX / InternetRetailing",
+    "source_id": "burberry",
+    "pages": [
+      48
+    ],
+    "selection_theme": "luxury",
+    "review_status": "unclassified",
+    "document_style": "report_case"
+  },
+  {
+    "case_id": "sdlc_agent",
+    "title": "Accelerated Software Delivery with Agentic AI",
+    "publisher": "GlobalLogic",
+    "source_id": "sdlc_agent",
+    "pages": [
+      1,
+      2
+    ],
+    "selection_theme": "ai_sdlc",
+    "review_status": "unclassified",
+    "document_style": "case_brief"
+  },
+  {
+    "case_id": "sdlc_modernization",
+    "title": "Modernizing Critical Digital Services with AI-Powered SDLC",
+    "publisher": "GlobalLogic",
+    "source_id": "sdlc_modernization",
+    "pages": [
+      1,
+      2
+    ],
+    "selection_theme": "ai_sdlc",
+    "review_status": "unclassified",
+    "document_style": "case_brief"
+  },
+  {
+    "case_id": "sdlc_energy",
+    "title": "Streamlining the SDLC for a Leader in Global Energy Technology",
+    "publisher": "GlobalLogic",
+    "source_id": "sdlc_energy",
+    "pages": [
+      1,
+      2
+    ],
+    "selection_theme": "ai_sdlc",
+    "review_status": "unclassified",
+    "document_style": "case_brief"
+  },
+  {
+    "case_id": "pharma_marketing",
+    "title": "Content Generation Agent for Pharma Marketing",
+    "publisher": "Clarkston Consulting",
+    "source_id": "pharma_marketing",
+    "pages": [
+      1,
+      2
+    ],
+    "selection_theme": "ai_content",
+    "review_status": "unclassified",
+    "document_style": "case_brief"
+  },
+  {
+    "case_id": "pharma_response",
+    "title": "Generative AI for Medical Standard Response Document Creation",
+    "publisher": "Clarkston Consulting",
+    "source_id": "pharma_response",
+    "pages": [
+      1,
+      2
+    ],
+    "selection_theme": "ai_communications",
+    "review_status": "unclassified",
+    "document_style": "case_brief"
+  },
+  {
+    "case_id": "eneco",
+    "title": "Eneco eMobility: generative AI customer care",
+    "publisher": "Capgemini",
+    "source_id": "eneco",
+    "pages": [
+      1,
+      2
+    ],
+    "selection_theme": "ai_assistant",
+    "review_status": "unclassified",
+    "document_style": "case_brief"
+  },
+  {
+    "case_id": "abn_amro",
+    "title": "ABN AMRO: future-focused Gen AI development",
+    "publisher": "Capgemini",
+    "source_id": "abn_amro",
+    "pages": [
+      1,
+      2
+    ],
+    "selection_theme": "general_ai_transformation",
+    "review_status": "unclassified",
+    "document_style": "case_brief"
+  },
+  {
+    "case_id": "navantia",
+    "title": "Navantia: Microsoft 365 Copilot adoption",
+    "publisher": "Capgemini",
+    "source_id": "navantia",
+    "pages": [
+      1,
+      2,
+      3
+    ],
+    "selection_theme": "office_productivity_distractor",
+    "review_status": "unclassified",
+    "document_style": "case_brief"
+  }
+]

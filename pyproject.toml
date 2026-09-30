@@ -1,0 +1,12 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+[project]
+name = "case-study-retrieval"
+version = "0.1.0"
+requires-python = ">=3.10"
+dependencies = ["pydantic>=2,<3"]
+[project.scripts]
+case-ingest = "case_studies.pipeline:main"
+[tool.setuptools.packages.find]
+where = ["src"]
