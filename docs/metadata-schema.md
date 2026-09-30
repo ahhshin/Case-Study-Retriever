@@ -1,6 +1,6 @@
-# Structured case records: next implementation step
+# Structured case records: v1
 
-PDF download, page-preserving text extraction, and initial case segmentation are complete for ten cases. Metadata classification is pending. `data/case-catalogue.json` contains routing hints, not verified factual tags.
+PDF download, page-preserving text extraction, and initial case segmentation are complete for ten cases. Ten assistant-curated draft records are complete. `data/case-catalogue.json` contains routing hints, not verified factual tags.
 
 ## Storage
 
@@ -13,13 +13,13 @@ Use one validated JSON file per case under `data/processed/cases/`. Generate a c
 | case_id, title | Stable identity | Preserve document identity |
 | source_id, pages | Link to manifest and physical PDF pages | Valid source ID and page range |
 | organization, year | Client and engagement timing, when stated | Quote and page; null when absent |
-| observed_tags | Industry, function, capability, technology, AI use case, lifecycle stage, challenge, solution, outcome, brand context, geography | Each tag carries quote and page |
+| observed_tags | Industry, function, capability, technology, AI use case, lifecycle stage, solution type, outcome type, brand context, engagement type | Each tag carries quote and page |
 | inferred_retrieval_concepts | Related concepts a search request might use | Explicitly marked inference |
 | summaries | Short challenge, solution, and outcome summaries | Evidence references for factual claims |
 | proof_points | Metric, description, scope, baseline, period, limitations | Exact source quote and page |
 | classification_metadata | Provider/model when applicable, schema version, date, review state | Distinguish model output from human review |
 
-The initial Pydantic schema in `src/case_studies/models.py` covers identity, tags, concepts, proof points, and review state. Extend it for the fields above before producing final records; it is not yet the final classification contract.
+The strict Pydantic contract is in `src/case_studies/models.py`; its generated JSON Schema is `data/case-record.schema.json`. Controlled labels and definitions are in `data/taxonomy.json`. Challenges are captured as grounded summaries rather than a separate tag vocabulary. Geography is deferred. Records remain drafts until independent review.
 
 ## Controlled labels
 

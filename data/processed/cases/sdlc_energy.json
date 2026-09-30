@@ -1,0 +1,197 @@
+{
+  "schema_version": "1.0",
+  "case_id": "sdlc_energy",
+  "title": "Streamlining the SDLC for a Leader in Global Energy Technology",
+  "source_id": "sdlc_energy",
+  "pages": [
+    1,
+    2
+  ],
+  "organization": null,
+  "engagement_year": null,
+  "observed_tags": [
+    {
+      "dimension": "industry",
+      "value": "energy",
+      "evidence_ids": [
+        "a"
+      ]
+    },
+    {
+      "dimension": "capability",
+      "value": "software_engineering",
+      "evidence_ids": [
+        "b",
+        "c",
+        "d",
+        "e"
+      ]
+    },
+    {
+      "dimension": "technology",
+      "value": "artificial_intelligence",
+      "evidence_ids": [
+        "b"
+      ]
+    },
+    {
+      "dimension": "ai_use_case",
+      "value": "code_review",
+      "evidence_ids": [
+        "c"
+      ]
+    },
+    {
+      "dimension": "ai_use_case",
+      "value": "documentation_generation",
+      "evidence_ids": [
+        "d"
+      ]
+    },
+    {
+      "dimension": "ai_use_case",
+      "value": "test_generation",
+      "evidence_ids": [
+        "e"
+      ]
+    },
+    {
+      "dimension": "lifecycle_stage",
+      "value": "testing",
+      "evidence_ids": [
+        "e"
+      ]
+    },
+    {
+      "dimension": "outcome_type",
+      "value": "productivity_improvement",
+      "evidence_ids": [
+        "f"
+      ]
+    },
+    {
+      "dimension": "outcome_type",
+      "value": "test_coverage_improvement",
+      "evidence_ids": [
+        "g",
+        "h"
+      ]
+    }
+  ],
+  "inferred_retrieval_concepts": [
+    "AI-enabled SDLC",
+    "developer productivity",
+    "QA automation"
+  ],
+  "summaries": {
+    "challenge": {
+      "text": "An energy-technology organization needed more efficient software engineering.",
+      "evidence_ids": [
+        "a",
+        "challenge"
+      ]
+    },
+    "solution": {
+      "text": "AI-powered automation supported code review, documentation, and unit tests.",
+      "evidence_ids": [
+        "b",
+        "c",
+        "d",
+        "e"
+      ]
+    },
+    "outcome": {
+      "text": "The publisher reports approximate improvements in productivity and test coverage.",
+      "evidence_ids": [
+        "f",
+        "g",
+        "h"
+      ]
+    }
+  },
+  "evidence": {
+    "a": {
+      "source_id": "sdlc_energy",
+      "page": 1,
+      "quote": "global energy technology leader"
+    },
+    "b": {
+      "source_id": "sdlc_energy",
+      "page": 2,
+      "quote": "Integrated AI-powered automation"
+    },
+    "c": {
+      "source_id": "sdlc_energy",
+      "page": 2,
+      "quote": "code review processes"
+    },
+    "d": {
+      "source_id": "sdlc_energy",
+      "page": 2,
+      "quote": "code documentation generation"
+    },
+    "e": {
+      "source_id": "sdlc_energy",
+      "page": 2,
+      "quote": "Automatically generated unit test cases"
+    },
+    "f": {
+      "source_id": "sdlc_energy",
+      "page": 2,
+      "quote": "~20% increase in developer productivity with task automation."
+    },
+    "g": {
+      "source_id": "sdlc_energy",
+      "page": 2,
+      "quote": "~20% improvement in overall code coverage and ~50% increase"
+    },
+    "h": {
+      "source_id": "sdlc_energy",
+      "page": 2,
+      "quote": "in unit test coverage."
+    },
+    "challenge": {
+      "source_id": "sdlc_energy",
+      "page": 1,
+      "quote": "needed to streamline its software development lifecycle (SDLC) to improve"
+    }
+  },
+  "proof_points": [
+    {
+      "text": "Approximate increase in developer productivity.",
+      "evidence_ids": [
+        "f"
+      ],
+      "metric": "~20%",
+      "scope": "Task automation",
+      "baseline": null,
+      "measurement_period": null,
+      "qualification": "Approximate; measurement period not stated.",
+      "status": "publisher_reported"
+    },
+    {
+      "text": "Approximate increase in unit test coverage.",
+      "evidence_ids": [
+        "g",
+        "h"
+      ],
+      "metric": "~50%",
+      "scope": "Unit test coverage",
+      "baseline": null,
+      "measurement_period": null,
+      "qualification": "Relative increase wording; not a percentage-point change.",
+      "status": "publisher_reported"
+    }
+  ],
+  "limitations": [
+    "AI is explicit; the selected pages do not establish a specific generative model."
+  ],
+  "classification_metadata": {
+    "method": "assistant_curated",
+    "classifier": "ChatGPT assistant curation and source-text review; no external classification API",
+    "classified_on": "2026-09-30",
+    "taxonomy_version": "1.0",
+    "source_sha256": "ef94ea34f67f53d6a6e332c72d2faa1e3515f73fa6c60ccd187c90804e65825e"
+  },
+  "review_status": "draft"
+}

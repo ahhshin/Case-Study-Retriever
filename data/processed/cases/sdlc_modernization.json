@@ -1,0 +1,219 @@
+{
+  "schema_version": "1.0",
+  "case_id": "sdlc_modernization",
+  "title": "Modernizing Critical Digital Services with AI-Powered SDLC",
+  "source_id": "sdlc_modernization",
+  "pages": [
+    1,
+    2
+  ],
+  "organization": null,
+  "engagement_year": null,
+  "observed_tags": [
+    {
+      "dimension": "industry",
+      "value": "biopharmaceuticals",
+      "evidence_ids": [
+        "a"
+      ]
+    },
+    {
+      "dimension": "capability",
+      "value": "software_engineering",
+      "evidence_ids": [
+        "b",
+        "c",
+        "f"
+      ]
+    },
+    {
+      "dimension": "capability",
+      "value": "application_modernization",
+      "evidence_ids": [
+        "b",
+        "c"
+      ]
+    },
+    {
+      "dimension": "technology",
+      "value": "generative_ai",
+      "evidence_ids": [
+        "c"
+      ]
+    },
+    {
+      "dimension": "technology",
+      "value": "azure",
+      "evidence_ids": [
+        "d"
+      ]
+    },
+    {
+      "dimension": "ai_use_case",
+      "value": "code_conversion",
+      "evidence_ids": [
+        "c",
+        "g"
+      ]
+    },
+    {
+      "dimension": "ai_use_case",
+      "value": "test_generation",
+      "evidence_ids": [
+        "f"
+      ]
+    },
+    {
+      "dimension": "lifecycle_stage",
+      "value": "modernization",
+      "evidence_ids": [
+        "b",
+        "c"
+      ]
+    },
+    {
+      "dimension": "lifecycle_stage",
+      "value": "deployment",
+      "evidence_ids": [
+        "e"
+      ]
+    },
+    {
+      "dimension": "outcome_type",
+      "value": "delivery_acceleration",
+      "evidence_ids": [
+        "g",
+        "h"
+      ]
+    },
+    {
+      "dimension": "outcome_type",
+      "value": "cost_reduction",
+      "evidence_ids": [
+        "i",
+        "j"
+      ]
+    }
+  ],
+  "inferred_retrieval_concepts": [
+    "AI-assisted migration",
+    "legacy modernization",
+    "software delivery efficiency"
+  ],
+  "summaries": {
+    "challenge": {
+      "text": "A pharmaceutical organization needed to modernize legacy web services.",
+      "evidence_ids": [
+        "a",
+        "b"
+      ]
+    },
+    "solution": {
+      "text": "GenAI-driven modernization combined Azure, automated CI/CD, and test generation.",
+      "evidence_ids": [
+        "c",
+        "d",
+        "e",
+        "f"
+      ]
+    },
+    "outcome": {
+      "text": "The publisher reports faster conversion delivery and cost savings across the modernization effort.",
+      "evidence_ids": [
+        "g",
+        "h",
+        "i",
+        "j"
+      ]
+    }
+  },
+  "evidence": {
+    "a": {
+      "source_id": "sdlc_modernization",
+      "page": 1,
+      "quote": "global pharmaceutical organization"
+    },
+    "b": {
+      "source_id": "sdlc_modernization",
+      "page": 2,
+      "quote": "legacy web"
+    },
+    "c": {
+      "source_id": "sdlc_modernization",
+      "page": 2,
+      "quote": "GenAI-driven automation"
+    },
+    "d": {
+      "source_id": "sdlc_modernization",
+      "page": 2,
+      "quote": "secure Azure foundation"
+    },
+    "e": {
+      "source_id": "sdlc_modernization",
+      "page": 2,
+      "quote": "automated CI/CD."
+    },
+    "f": {
+      "source_id": "sdlc_modernization",
+      "page": 2,
+      "quote": "accelerated test generation"
+    },
+    "g": {
+      "source_id": "sdlc_modernization",
+      "page": 2,
+      "quote": "44% faster delivery timelines, reducing conversion from 11 months"
+    },
+    "h": {
+      "source_id": "sdlc_modernization",
+      "page": 2,
+      "quote": "to 6 months."
+    },
+    "i": {
+      "source_id": "sdlc_modernization",
+      "page": 2,
+      "quote": "68% overall cost savings through automation, modernization, and"
+    },
+    "j": {
+      "source_id": "sdlc_modernization",
+      "page": 2,
+      "quote": "infrastructure consolidation."
+    }
+  },
+  "proof_points": [
+    {
+      "text": "Faster delivery timelines, with conversion reduced from 11 to 6 months.",
+      "evidence_ids": [
+        "g",
+        "h"
+      ],
+      "metric": "44%",
+      "scope": "Legacy service conversion",
+      "baseline": "11 months",
+      "measurement_period": null,
+      "qualification": null,
+      "status": "publisher_reported"
+    },
+    {
+      "text": "Overall cost savings.",
+      "evidence_ids": [
+        "i",
+        "j"
+      ],
+      "metric": "68%",
+      "scope": "Automation, modernization, and infrastructure consolidation",
+      "baseline": null,
+      "measurement_period": null,
+      "qualification": "Do not attribute all savings solely to AI.",
+      "status": "publisher_reported"
+    }
+  ],
+  "limitations": [],
+  "classification_metadata": {
+    "method": "assistant_curated",
+    "classifier": "ChatGPT assistant curation and source-text review; no external classification API",
+    "classified_on": "2026-09-30",
+    "taxonomy_version": "1.0",
+    "source_sha256": "d8d740f9ede53c4a69bd6232f93062a9a1759658a773e2ee7c8de31beac5688f"
+  },
+  "review_status": "draft"
+}

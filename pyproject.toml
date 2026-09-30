@@ -8,5 +8,6 @@ requires-python = ">=3.10"
 dependencies = ["pydantic>=2,<3"]
 [project.scripts]
 case-ingest = "case_studies.pipeline:main"
+case-validate = "case_studies.metadata:main"
 [tool.setuptools.packages.find]
 where = ["src"]

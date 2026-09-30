@@ -5,6 +5,8 @@ from pathlib import Path
 ROOT = Path(__file__).resolve().parents[2]
 
 def ingest(source, force=False):
+    for directory in ('raw','parsed'):
+        (ROOT / 'data' / directory).mkdir(parents=True, exist_ok=True)
     sid = source['id']
     pdf = ROOT / 'data/raw' / f'{sid}.pdf'
     if force or not pdf.exists():

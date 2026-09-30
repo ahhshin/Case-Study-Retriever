@@ -1,0 +1,155 @@
+{
+  "schema_version": "1.0",
+  "case_id": "jura",
+  "title": "Jura Coffee: AR and 3D commerce",
+  "source_id": "jura",
+  "pages": [
+    20
+  ],
+  "organization": {
+    "text": "Jura Coffee",
+    "evidence_ids": [
+      "a"
+    ]
+  },
+  "engagement_year": null,
+  "observed_tags": [
+    {
+      "dimension": "industry",
+      "value": "consumer_appliances",
+      "evidence_ids": [
+        "b"
+      ]
+    },
+    {
+      "dimension": "function",
+      "value": "commerce",
+      "evidence_ids": [
+        "e",
+        "f"
+      ]
+    },
+    {
+      "dimension": "technology",
+      "value": "augmented_reality",
+      "evidence_ids": [
+        "c"
+      ]
+    },
+    {
+      "dimension": "technology",
+      "value": "3d_models",
+      "evidence_ids": [
+        "c"
+      ]
+    },
+    {
+      "dimension": "solution_type",
+      "value": "immersive_commerce",
+      "evidence_ids": [
+        "c"
+      ]
+    },
+    {
+      "dimension": "brand_context",
+      "value": "premium",
+      "evidence_ids": [
+        "b"
+      ]
+    },
+    {
+      "dimension": "outcome_type",
+      "value": "conversion_improvement",
+      "evidence_ids": [
+        "e",
+        "f"
+      ]
+    }
+  ],
+  "inferred_retrieval_concepts": [
+    "digital showroom",
+    "premium product experience",
+    "brand-sensitive commerce"
+  ],
+  "summaries": {
+    "challenge": {
+      "text": "Online buyers struggled to assess the qualities of high-end coffee machines.",
+      "evidence_ids": [
+        "b",
+        "d"
+      ]
+    },
+    "solution": {
+      "text": "The ecommerce experience added AR and 3D product models.",
+      "evidence_ids": [
+        "c"
+      ]
+    },
+    "outcome": {
+      "text": "The publisher reports higher conversions on AR-enabled products.",
+      "evidence_ids": [
+        "e",
+        "f"
+      ]
+    }
+  },
+  "evidence": {
+    "a": {
+      "source_id": "jura",
+      "page": 20,
+      "quote": "Jura Coffee"
+    },
+    "b": {
+      "source_id": "jura",
+      "page": 20,
+      "quote": "high-end professional and home coffee machines"
+    },
+    "c": {
+      "source_id": "jura",
+      "page": 20,
+      "quote": "deploy AR and 3D models"
+    },
+    "d": {
+      "source_id": "jura",
+      "page": 20,
+      "quote": "customers were struggling to get a sense of the brand’s"
+    },
+    "e": {
+      "source_id": "jura",
+      "page": 20,
+      "quote": "15% boost in conversions on"
+    },
+    "f": {
+      "source_id": "jura",
+      "page": 20,
+      "quote": "products enabled with AR capabilities."
+    }
+  },
+  "proof_points": [
+    {
+      "text": "Reported boost in conversions.",
+      "evidence_ids": [
+        "e",
+        "f"
+      ],
+      "metric": "15%",
+      "scope": "Products enabled with AR capabilities",
+      "baseline": null,
+      "measurement_period": null,
+      "qualification": "Baseline and measurement period are not specified.",
+      "status": "publisher_reported"
+    }
+  ],
+  "limitations": [
+    "Premium appliance case; not evidence of ultra-luxury fashion work.",
+    "No AI deployment established in this case."
+  ],
+  "classification_metadata": {
+    "method": "assistant_curated",
+    "classifier": "ChatGPT assistant curation and source-text review; no external classification API",
+    "classified_on": "2026-09-30",
+    "taxonomy_version": "1.0",
+    "source_sha256": "f667136fb70bf76643eb77466e661339eae4db31c363d34b0324296c9f6d846d"
+  },
+  "review_status": "draft"
+}

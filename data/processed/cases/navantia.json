@@ -1,0 +1,200 @@
+{
+  "schema_version": "1.0",
+  "case_id": "navantia",
+  "title": "Navantia: Microsoft 365 Copilot adoption",
+  "source_id": "navantia",
+  "pages": [
+    1,
+    2,
+    3
+  ],
+  "organization": {
+    "text": "Navantia",
+    "evidence_ids": [
+      "a"
+    ]
+  },
+  "engagement_year": null,
+  "observed_tags": [
+    {
+      "dimension": "industry",
+      "value": "aerospace_defense",
+      "evidence_ids": [
+        "b"
+      ]
+    },
+    {
+      "dimension": "function",
+      "value": "workplace_operations",
+      "evidence_ids": [
+        "c"
+      ]
+    },
+    {
+      "dimension": "capability",
+      "value": "change_management",
+      "evidence_ids": [
+        "d",
+        "e"
+      ]
+    },
+    {
+      "dimension": "technology",
+      "value": "microsoft_365_copilot",
+      "evidence_ids": [
+        "d"
+      ]
+    },
+    {
+      "dimension": "solution_type",
+      "value": "workplace_assistant",
+      "evidence_ids": [
+        "d"
+      ]
+    },
+    {
+      "dimension": "outcome_type",
+      "value": "adoption",
+      "evidence_ids": [
+        "f",
+        "k"
+      ]
+    },
+    {
+      "dimension": "outcome_type",
+      "value": "productivity_improvement",
+      "evidence_ids": [
+        "g",
+        "h"
+      ]
+    },
+    {
+      "dimension": "technology",
+      "value": "generative_ai",
+      "evidence_ids": [
+        "genai"
+      ]
+    }
+  ],
+  "inferred_retrieval_concepts": [
+    "enterprise assistant adoption",
+    "workplace AI enablement",
+    "office productivity"
+  ],
+  "summaries": {
+    "challenge": {
+      "text": "Navantia sought improved employee productivity through Copilot adoption.",
+      "evidence_ids": [
+        "a",
+        "c"
+      ]
+    },
+    "solution": {
+      "text": "A structured Microsoft 365 Copilot adoption and training program supported deployment.",
+      "evidence_ids": [
+        "d",
+        "e"
+      ]
+    },
+    "outcome": {
+      "text": "The publisher reports license activation and administrative time savings.",
+      "evidence_ids": [
+        "f",
+        "k",
+        "g",
+        "h"
+      ]
+    }
+  },
+  "evidence": {
+    "a": {
+      "source_id": "navantia",
+      "page": 1,
+      "quote": "Client: Navantia"
+    },
+    "b": {
+      "source_id": "navantia",
+      "page": 1,
+      "quote": "Industry: Aerospace and defense"
+    },
+    "c": {
+      "source_id": "navantia",
+      "page": 1,
+      "quote": "improving employee productivity and"
+    },
+    "d": {
+      "source_id": "navantia",
+      "page": 1,
+      "quote": "comprehensive Microsoft 365 Copilot"
+    },
+    "e": {
+      "source_id": "navantia",
+      "page": 2,
+      "quote": "training plan"
+    },
+    "f": {
+      "source_id": "navantia",
+      "page": 2,
+      "quote": "91.7%"
+    },
+    "k": {
+      "source_id": "navantia",
+      "page": 2,
+      "quote": "effective activation rate among employees."
+    },
+    "g": {
+      "source_id": "navantia",
+      "page": 2,
+      "quote": "30 minutes per day"
+    },
+    "h": {
+      "source_id": "navantia",
+      "page": 2,
+      "quote": "administrative tasks by an average of"
+    },
+    "genai": {
+      "source_id": "navantia",
+      "page": 1,
+      "quote": "supporting the use of Generative AI in their daily operations."
+    }
+  },
+  "proof_points": [
+    {
+      "text": "Effective activation rate.",
+      "evidence_ids": [
+        "f",
+        "k"
+      ],
+      "metric": "91.7%",
+      "scope": "Allocated Copilot licenses",
+      "baseline": null,
+      "measurement_period": null,
+      "qualification": "Activation is not a software-delivery outcome.",
+      "status": "publisher_reported"
+    },
+    {
+      "text": "Average reduction in time spent on administrative tasks.",
+      "evidence_ids": [
+        "g",
+        "h"
+      ],
+      "metric": "30 minutes/day",
+      "scope": "Per employee administrative work",
+      "baseline": null,
+      "measurement_period": null,
+      "qualification": "Not a developer productivity measurement.",
+      "status": "publisher_reported"
+    }
+  ],
+  "limitations": [
+    "Useful distractor for SDLC queries; relevant to workplace AI requests."
+  ],
+  "classification_metadata": {
+    "method": "assistant_curated",
+    "classifier": "ChatGPT assistant curation and source-text review; no external classification API",
+    "classified_on": "2026-09-30",
+    "taxonomy_version": "1.0",
+    "source_sha256": "2428aa385aff6c03742330056f5c31fa50ea942d04b0928c82ec53b0e67f18b1"
+  },
+  "review_status": "draft"
+}

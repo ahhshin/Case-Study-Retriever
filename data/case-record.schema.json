@@ -1,0 +1,333 @@
+{
+  "$defs": {
+    "ClassificationMetadata": {
+      "additionalProperties": false,
+      "properties": {
+        "method": {
+          "enum": [
+            "assistant_curated",
+            "model_api"
+          ],
+          "title": "Method",
+          "type": "string"
+        },
+        "classifier": {
+          "title": "Classifier",
+          "type": "string"
+        },
+        "classified_on": {
+          "title": "Classified On",
+          "type": "string"
+        },
+        "taxonomy_version": {
+          "title": "Taxonomy Version",
+          "type": "string"
+        },
+        "source_sha256": {
+          "title": "Source Sha256",
+          "type": "string"
+        }
+      },
+      "required": [
+        "method",
+        "classifier",
+        "classified_on",
+        "taxonomy_version",
+        "source_sha256"
+      ],
+      "title": "ClassificationMetadata",
+      "type": "object"
+    },
+    "Evidence": {
+      "additionalProperties": false,
+      "properties": {
+        "source_id": {
+          "title": "Source Id",
+          "type": "string"
+        },
+        "page": {
+          "minimum": 1,
+          "title": "Page",
+          "type": "integer"
+        },
+        "quote": {
+          "minLength": 1,
+          "title": "Quote",
+          "type": "string"
+        }
+      },
+      "required": [
+        "source_id",
+        "page",
+        "quote"
+      ],
+      "title": "Evidence",
+      "type": "object"
+    },
+    "GroundedText": {
+      "additionalProperties": false,
+      "properties": {
+        "text": {
+          "minLength": 1,
+          "title": "Text",
+          "type": "string"
+        },
+        "evidence_ids": {
+          "items": {
+            "type": "string"
+          },
+          "minItems": 1,
+          "title": "Evidence Ids",
+          "type": "array"
+        }
+      },
+      "required": [
+        "text",
+        "evidence_ids"
+      ],
+      "title": "GroundedText",
+      "type": "object"
+    },
+    "ObservedTag": {
+      "additionalProperties": false,
+      "properties": {
+        "dimension": {
+          "enum": [
+            "industry",
+            "function",
+            "capability",
+            "technology",
+            "ai_use_case",
+            "lifecycle_stage",
+            "solution_type",
+            "outcome_type",
+            "brand_context",
+            "engagement_type"
+          ],
+          "title": "Dimension",
+          "type": "string"
+        },
+        "value": {
+          "title": "Value",
+          "type": "string"
+        },
+        "evidence_ids": {
+          "items": {
+            "type": "string"
+          },
+          "minItems": 1,
+          "title": "Evidence Ids",
+          "type": "array"
+        }
+      },
+      "required": [
+        "dimension",
+        "value",
+        "evidence_ids"
+      ],
+      "title": "ObservedTag",
+      "type": "object"
+    },
+    "ProofPoint": {
+      "additionalProperties": false,
+      "properties": {
+        "text": {
+          "minLength": 1,
+          "title": "Text",
+          "type": "string"
+        },
+        "evidence_ids": {
+          "items": {
+            "type": "string"
+          },
+          "minItems": 1,
+          "title": "Evidence Ids",
+          "type": "array"
+        },
+        "metric": {
+          "title": "Metric",
+          "type": "string"
+        },
+        "scope": {
+          "title": "Scope",
+          "type": "string"
+        },
+        "baseline": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Baseline"
+        },
+        "measurement_period": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Measurement Period"
+        },
+        "qualification": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Qualification"
+        },
+        "status": {
+          "default": "publisher_reported",
+          "enum": [
+            "publisher_reported",
+            "independently_verified"
+          ],
+          "title": "Status",
+          "type": "string"
+        }
+      },
+      "required": [
+        "text",
+        "evidence_ids",
+        "metric",
+        "scope"
+      ],
+      "title": "ProofPoint",
+      "type": "object"
+    }
+  },
+  "additionalProperties": false,
+  "properties": {
+    "schema_version": {
+      "default": "1.0",
+      "title": "Schema Version",
+      "type": "string"
+    },
+    "case_id": {
+      "title": "Case Id",
+      "type": "string"
+    },
+    "title": {
+      "title": "Title",
+      "type": "string"
+    },
+    "source_id": {
+      "title": "Source Id",
+      "type": "string"
+    },
+    "pages": {
+      "items": {
+        "type": "integer"
+      },
+      "minItems": 1,
+      "title": "Pages",
+      "type": "array"
+    },
+    "organization": {
+      "anyOf": [
+        {
+          "$ref": "#/$defs/GroundedText"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "default": null
+    },
+    "engagement_year": {
+      "anyOf": [
+        {
+          "$ref": "#/$defs/GroundedText"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "default": null
+    },
+    "observed_tags": {
+      "items": {
+        "$ref": "#/$defs/ObservedTag"
+      },
+      "title": "Observed Tags",
+      "type": "array"
+    },
+    "inferred_retrieval_concepts": {
+      "items": {
+        "type": "string"
+      },
+      "title": "Inferred Retrieval Concepts",
+      "type": "array"
+    },
+    "summaries": {
+      "additionalProperties": {
+        "$ref": "#/$defs/GroundedText"
+      },
+      "propertyNames": {
+        "enum": [
+          "challenge",
+          "solution",
+          "outcome"
+        ]
+      },
+      "title": "Summaries",
+      "type": "object"
+    },
+    "evidence": {
+      "additionalProperties": {
+        "$ref": "#/$defs/Evidence"
+      },
+      "title": "Evidence",
+      "type": "object"
+    },
+    "proof_points": {
+      "items": {
+        "$ref": "#/$defs/ProofPoint"
+      },
+      "title": "Proof Points",
+      "type": "array"
+    },
+    "limitations": {
+      "items": {
+        "type": "string"
+      },
+      "title": "Limitations",
+      "type": "array"
+    },
+    "classification_metadata": {
+      "$ref": "#/$defs/ClassificationMetadata"
+    },
+    "review_status": {
+      "default": "draft",
+      "enum": [
+        "draft",
+        "reviewed"
+      ],
+      "title": "Review Status",
+      "type": "string"
+    }
+  },
+  "required": [
+    "case_id",
+    "title",
+    "source_id",
+    "pages",
+    "summaries",
+    "evidence",
+    "classification_metadata"
+  ],
+  "title": "CaseRecord",
+  "type": "object"
+}
