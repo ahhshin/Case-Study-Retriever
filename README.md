@@ -4,9 +4,42 @@ Canonical project: https://github.com/ahhshin/Case-Study-Retriever
 
 Ten public PDF sources, page-preserving ingestion, and ten structured case records with source-backed tags and proof points. A provider-independent retrieval harness and simple GUI are now included. Real provider access is configured through an adapter.
 
-## Setup
+## Try the demo — no installation required
 
-Python 3.10+, Poppler (`pdftotext` and `pdftoppm`).
+1. Click **Code → Download ZIP** above, then extract the ZIP.
+2. Open **web/demo.html** in Chrome or another modern browser.
+3. Type **“find me a case study about luxury brands”**, or click an example.
+
+The luxury query returns Burberry with supporting evidence from page 48. The demo includes all ten case records and works offline; source links need internet access. **This immediate demo uses metadata search, not a live AI model.** No Python, API key, or PDF download is required. GitHub displays HTML source; download the file or repository before opening the demo.
+
+## Run the Python-backed GUI
+
+Clone or download this repository. Python 3.10+ is required:
+
+```bash
+git clone https://github.com/ahhshin/Case-Study-Retriever.git
+cd Case-Study-Retriever
+python -m venv .venv
+```
+
+Activate the environment:
+
+- **macOS/Linux:** `source .venv/bin/activate`
+- **Windows PowerShell:** `.venv\Scripts\Activate.ps1`
+- **Windows Command Prompt:** `.venv\Scripts\activate.bat`
+
+Then:
+
+```bash
+python -m pip install -e .
+case-serve
+```
+
+Open **http://127.0.0.1:8765**. The committed metadata is sufficient for default search; there is no ingestion step or model key required. Plug in any model through the adapter interface described in the [harness guide](docs/retrieval-harness.md).
+
+## Optional: rebuild the source corpus
+
+Python 3.10+, Poppler (`pdftotext` and `pdftoppm`). Only needed to download/parse the original PDFs, verify them against the records, or enable full-page model reads.
 
 ```bash
 python -m venv .venv
